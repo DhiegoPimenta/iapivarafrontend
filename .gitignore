@@ -1,0 +1,7 @@
+node_modeules/
+.pnpm-strore/
+dist/
+build/
+.idea/
+.env
+.env.local
