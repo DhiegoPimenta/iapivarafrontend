@@ -6,13 +6,15 @@ import { ScrollArea } from '@/components/ui/scroll-area'
 import ChatMessage from './components/ChatMessage'
 import TypingIndicator from './components/TypingIndicator'
 import { Message, ApiResponse } from './types'
+import iapivaraLogo from './assets/iapivara.png';
+
 import './App.css'
 
 function App() {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
-      text: 'Olá! Eu sou a IAPivara, sua assistente para verificação de notícias! 🦫\n\nPergunta qualquer coisa que você quer verificar se é verdade ou fake news. Por exemplo:\n\n• "Lula morreu?"\n• "Brasil é pentacampeão?"\n• "Disney vai abrir parque no Brasil?"',
+      text: 'Olá! Eu sou a IAPivara, sua assistente para verificação de notícias! 🦫\n\nPergunta qualquer coisa que você quer verificar se é verdade ou fake news."',
       isUser: false,
       timestamp: new Date(),
     }
@@ -103,7 +105,7 @@ function App() {
         <div className="max-w-4xl mx-auto flex items-center gap-3 sm:gap-5">
           <div className="relative">
             <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-emerald-400 via-teal-500 to-cyan-600 rounded-2xl flex items-center justify-center text-2xl sm:text-4xl shadow-2xl ring-2 sm:ring-4 ring-white/30 transform hover:scale-105 transition-all duration-300">
-              🦫
+            <img src={iapivaraLogo} alt="Logo IAPivara" className="w-10 h-10 sm:w-14 sm:h-14 rounded-lg" />
             </div>
             <div className="absolute -top-1 -right-1 w-4 h-4 sm:w-6 sm:h-6 bg-gradient-to-br from-green-400 to-emerald-500 rounded-full flex items-center justify-center shadow-lg">
               <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-white rounded-full animate-pulse"></div>
